@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: 0;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -15,7 +17,7 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #131313;
 }
 
@@ -40,4 +42,4 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
