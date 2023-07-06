@@ -1,4 +1,4 @@
-@use 'utils/vars' as *;
+// @use 'utils/vars' as *;
 
-@import 'partials/global-styles';
-@import 'partials/hero';
+@import './utils/vars';
+@import './partials/hero2';
