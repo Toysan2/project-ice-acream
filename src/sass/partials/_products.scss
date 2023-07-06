@@ -79,31 +79,31 @@
       box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     }
 
-    &-rectangle-ice-cream {
-      background-color: #aec6a5;
-      width: 320px; //d370px
-      height: 428px; //d536px
+    &-card-ice-cream {
+      background-color: getColor('iceBgGreen');
+      width: 320px;
+      height: 428px;
       border-radius: 24px;
     }
 
-    &-rectangle-ice-coffe {
-      background-color: #efd478;
-      width: 370px;
-      height: 536px;
+    &-card-ice-coffe {
+      background-color: getColor('iceBgYellow');
+      width: 320px;
+      height: 428px;
       border-radius: 24px;
     }
 
-    &-rectangle-milkshakes {
-      background-color: #d6936d;
-      width: 370px;
-      height: 536px;
+    &-card-milkshakes {
+      background-color: getColor('iceBgBrown');
+      width: 320px;
+      height: 428px;
       border-radius: 24px;
     }
 
     &-item {
       &-name {
-        margin-top: -77px;
-        padding-bottom: 66px;
+        margin-top: -73px;
+        padding-bottom: 40px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -118,18 +118,22 @@
       }
 
       &-description {
+        width: 200px;
+        height: 100px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.76;
         text-align: center;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.56px;
 
         color: getColor('dark');
         padding-bottom: 50px;
+        margin-left: 60px;
       }
       &-arrow-icon {
+        margin-top: 106px;
         cursor: pointer;
       }
     }
@@ -147,9 +151,9 @@
   .products {
     width: 1369px;
     height: 1242px;
-    background-image: url('./../images/desktop/Backgroud_desktop.png'),
-      url('./../images/desktop/Backgroud_desktop@2x.png'),
-      url('./../images/desktop/Backgroud_desktop@3x.png');
+    background-image: url('./../images/desktop/Backgroud_desktop.jpg'),
+      url('./../images/desktop/Backgroud_desktop@2x.jpg'),
+      url('./../images/desktop/Backgroud_desktop@3x.jpg');
 
     &__title {
       /* 100% natural */
@@ -228,22 +232,22 @@
         box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
       }
 
-      &-rectangle-ice-cream {
-        background-color: #aec6a5;
+      &-card-ice-cream {
+        background-color: getColor('iceBgGreen');
         width: 370px;
         height: 536px;
         border-radius: 24px;
       }
 
-      &-rectangle-ice-coffe {
-        background-color: #efd478;
+      &-card-ice-coffe {
+        background-color: getColor('iceBgYellow');
         width: 370px;
         height: 536px;
         border-radius: 24px;
       }
 
-      &-rectangle-milkshakes {
-        background-color: #d6936d;
+      &-card-milkshakes {
+        background-color: getColor('iceBgBrown');
         width: 370px;
         height: 536px;
         border-radius: 24px;
