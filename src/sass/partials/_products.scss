@@ -1,5 +1,7 @@
 .products {
   margin: auto;
+  max-width: 1369px;
+  max-height: 1242px;
 
   &__title {
     /* 100% natural */
@@ -103,17 +105,30 @@
 }
 
 @media #{$desktop} {
-  .products__list {
+  .products {
     width: 1369px;
     height: 1242px;
-    margin: auto;
-
     background-image: url('./../images/desktop/Backgroud_desktop.png'),
       url('./../images/desktop/Backgroud_desktop@2x.png'),
       url('./../images/desktop/Backgroud_desktop@3x.png');
 
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    &__title {
+      /* 100% natural */
+      padding-top: 144px;
+    }
+
+    &__title-primary {
+      /* products */
+      padding-top: 12px;
+      padding-bottom: 120px;
+    }
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      margin: auto;
+    }
   }
 }
