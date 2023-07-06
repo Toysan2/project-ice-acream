@@ -43,11 +43,13 @@ body {
 }
 .products {
   margin: auto;
-  max-width: 1369px;
-  max-height: 1242px;
+  background-image: url("./../images/mobil/Backgroud_mobile.png");
+  background-size: cover;
 }
 .products__title {
   /* 100% natural */
+  padding-top: 60px;
+  padding-bottom: 12px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -60,6 +62,7 @@ body {
 }
 .products__title-primary {
   /* products */
+  padding-bottom: 145px;
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -79,10 +82,34 @@ body {
   text-align: center;
   align-items: center;
 }
+.products__list-circle-ice-cream {
+  position: relative;
+  top: -100px;
+  right: 0px;
+  z-index: 2;
+  border-radius: 150px;
+  background-image: url("./../images/product_ice-cream.png"), url("./../images/product_ice-cream@2x.png"), url("./../images/product_ice-cream@3x.png");
+  width: 200px;
+  height: 200px;
+  background-size: 200px 200px;
+  margin: auto;
+}
+.products__list-circle-ice-cream-shadow {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 11px;
+  right: 0px;
+  z-index: 1;
+  margin: auto;
+  border-radius: 150px;
+  background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
 .products__list-rectangle-ice-cream {
   background-color: #aec6a5;
-  width: 370px;
-  height: 536px;
+  width: 320px;
+  height: 428px;
   border-radius: 24px;
 }
 .products__list-rectangle-ice-coffe {
@@ -98,7 +125,7 @@ body {
   border-radius: 24px;
 }
 .products__list-item-name {
-  padding-top: 165px;
+  margin-top: -77px;
   padding-bottom: 66px;
   font-family: "Montserrat";
   font-style: normal;
@@ -119,6 +146,10 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
+  padding-bottom: 50px;
+}
+.products__list-item-arrow-icon {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -135,17 +166,112 @@ body {
   }
   .products__title {
     /* 100% natural */
-    padding-top: 144px;
+    padding-top: 60px;
+    padding-bottom: 12px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.233;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
   }
   .products__title-primary {
     /* products */
-    padding-top: 12px;
-    padding-bottom: 120px;
+    padding-bottom: 145px;
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #131313;
   }
   .products__list {
+    margin: auto;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    gap: 30px;
     margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .products__list-circle-ice-cream {
+    position: relative;
+    top: -100px;
+    right: 0px;
+    z-index: 2;
+    border-radius: 150px;
+    background-image: url("./../images/product_ice-cream.png"), url("./../images/product_ice-cream@2x.png"), url("./../images/product_ice-cream@3x.png");
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    margin: auto;
+  }
+  .products__list-circle-ice-cream-shadow {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 11px;
+    right: 0px;
+    z-index: 1;
+    margin: auto;
+    border-radius: 150px;
+    background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+  .products__list-rectangle-ice-cream {
+    background-color: #aec6a5;
+    width: 370px;
+    height: 536px;
+    border-radius: 24px;
+  }
+  .products__list-rectangle-ice-coffe {
+    background-color: #efd478;
+    width: 370px;
+    height: 536px;
+    border-radius: 24px;
+  }
+  .products__list-rectangle-milkshakes {
+    background-color: #d6936d;
+    width: 370px;
+    height: 536px;
+    border-radius: 24px;
+  }
+  .products__list-item-name {
+    margin-top: -77px;
+    padding-bottom: 66px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.233;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+  }
+  .products__list-item-description {
+    width: 246px;
+    height: 142px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+    padding-left: 61px;
+    padding-bottom: 100px;
+  }
+  .products__list-item-arrow-icon {
+    cursor: pointer;
   }
 }/*# sourceMappingURL=main.css.map */
