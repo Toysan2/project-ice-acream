@@ -688,6 +688,7 @@ body {
 .products {
   background-image: url("./../images/mobil/Backgroud_mobile.jpg");
   width: 100%;
+  margin: auto;
 }
 .products__title {
   /* 100% natural */
@@ -917,6 +918,7 @@ body {
   .products {
     background-image: url("./../images/tablet/Background_tablet.jpg");
     width: 1200px;
+    margin: auto;
   }
   .products__title {
     /* 100% natural */
@@ -976,12 +978,36 @@ body {
     width: 1200px;
     margin: auto;
   }
+  .products__title {
+    /* 100% natural */
+    padding-top: 60px;
+    font-size: 30px;
+    line-height: 1.233;
+  }
+  .products__title-primary {
+    /* products */
+    font-size: 36px;
+    line-height: 1.25;
+    padding-bottom: 170px;
+  }
   .products__list {
     display: flex;
     flex-direction: row;
     gap: 29px;
     justify-content: center;
     align-items: center;
+  }
+  .products-card-ice-cream {
+    width: 370px;
+    height: 536px;
+  }
+  .products-card-ice-coffee {
+    width: 370px;
+    height: 536px;
+  }
+  .products-card-milkshakes {
+    width: 370px;
+    height: 536px;
   }
   .products-item-name {
     font-size: 30px;

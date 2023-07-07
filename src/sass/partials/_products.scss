@@ -21,6 +21,7 @@
 .products {
   background-image: url('./../images/mobil/Backgroud_mobile.jpg');
   width: 100%; //480px;
+  margin: auto;
 
   &__title {
     /* 100% natural */
@@ -336,6 +337,7 @@
   .products {
     background-image: url('./../images/tablet/Background_tablet.jpg');
     width: 1200px;
+    margin: auto;
 
     &__title {
       /* 100% natural */
@@ -374,6 +376,7 @@
       width: 370px;
       height: 536px;
     }
+
     &-item {
       &-name {
         font-size: 22px;
@@ -414,12 +417,42 @@
     width: 1200px;
     margin: auto;
 
+    &__title {
+      /* 100% natural */
+      padding-top: 60px;
+
+      font-size: 30px;
+      line-height: 1.233;
+    }
+
+    &__title-primary {
+      /* products */
+      font-size: 36px;
+      line-height: 1.25;
+      padding-bottom: 170px;
+    }
+
     &__list {
       display: flex;
       flex-direction: row;
       gap: 29px;
       justify-content: center;
       align-items: center;
+    }
+
+    &-card-ice-cream {
+      width: 370px;
+      height: 536px;
+    }
+
+    &-card-ice-coffee {
+      width: 370px;
+      height: 536px;
+    }
+
+    &-card-milkshakes {
+      width: 370px;
+      height: 536px;
     }
 
     &-item {
