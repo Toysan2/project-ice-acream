@@ -1,5 +1,8 @@
-@use 'utils/vars' as *;
-
+// @use 'utils/vars' as *;
+@import './utils/vars';
 @import 'partials/global-styles';
+@import 'partials/contacts';
+@import './partials/hero2';
+@import './partials/products';
 @import "./partials/modal-4";
 @import "./partials/modal-5";
