@@ -908,17 +908,41 @@ body {
   cursor: pointer;
 }
 
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url("./../images/tablet/Background_tablet@2x.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
+  .products {
+    background-image: url("./../images/tablet/Background_tablet@3x.jpg");
+    background-size: cover;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
-  .products__list {
+  .products {
+    background-image: url("./../images/tablet/Background_tablet.jpg");
+    background-size: cover;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .products__title {
+    /* 100% natural */
+    font-size: 30px;
+    line-height: 1.233;
+  }
+  .products__title-primary {
+    /* products */
+    font-size: 36px;
+    line-height: 1.25;
   }
 }
 @media (min-width: 1200px) {
   .products {
-    width: 1369px;
-    height: 1242px;
     background-image: url("./../images/desktop/Backgroud_desktop.jpg"), url("./../images/desktop/Backgroud_desktop@2x.jpg"), url("./../images/desktop/Backgroud_desktop@3x.jpg");
+    background-size: cover;
   }
   .products__title {
     /* 100% natural */
