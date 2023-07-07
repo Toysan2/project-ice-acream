@@ -714,7 +714,8 @@ body {
   text-align: center;
   align-items: center;
   /* ice cream */
-  /* ice coffe */
+  /* ice coffee */
+  /* milkshakes */
 }
 .products__list-circle-ice-cream::before {
   /* image */
@@ -735,7 +736,6 @@ body {
   display: block;
   position: relative;
   top: -289px;
-  z-index: 2;
   margin: auto;
   border-radius: 150px;
   background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
@@ -743,30 +743,55 @@ body {
   width: 200px;
   height: 200px;
 }
-.products__list-circle-ice-coffe::before {
+.products__list-circle-ice-coffee::before {
   /* image */
   content: "";
   display: block;
   position: relative;
   top: -100px;
   border-radius: 150px;
-  background-image: url("./../images/product_ice-cream.png"), url("./../images/product_ice-cream@2x.png"), url("./../images/product_ice-cream@3x.png");
+  background-image: url("./../images/product_ice-coffee.jpg"), url("./../images/product_ice-coffee@2x.jpg"), url("./../images/product_ice-coffee@3x.jpg");
   width: 200px;
   height: 200px;
   background-size: 200px 200px;
   margin: auto;
 }
-.products__list-circle-ice-cream::after {
+.products__list-circle-ice-coffee::after {
   /* shadow */
   content: "";
   display: block;
   position: relative;
   top: -289px;
-  z-index: 2;
   margin: auto;
   border-radius: 150px;
-  background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
-  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  width: 200px;
+  height: 200px;
+}
+.products__list-circle-milkshakes::before {
+  /* image */
+  content: "";
+  display: block;
+  position: relative;
+  top: -100px;
+  border-radius: 150px;
+  background-image: url("./../images/product_milkshakes.jpg"), url("./../images/product_milkshakes@2x.jpg"), url("./../images/product_milkshakes@3x.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: 200px 200px;
+  margin: auto;
+}
+.products__list-circle-milkshakes::after {
+  /* shadow */
+  content: "";
+  display: block;
+  position: relative;
+  top: -289px;
+  margin: auto;
+  border-radius: 150px;
+  background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   width: 200px;
   height: 200px;
 }
@@ -776,7 +801,7 @@ body {
   height: 428px;
   border-radius: 24px;
 }
-.products__list-card-ice-coffe {
+.products__list-card-ice-coffee {
   background-color: #efd478;
   width: 320px;
   height: 428px;

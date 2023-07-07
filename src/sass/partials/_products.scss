@@ -72,10 +72,8 @@
       content: '';
       display: block;
       position: relative;
-
       top: -289px;
 
-      z-index: 2;
       margin: auto;
       border-radius: 150px;
       background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
@@ -86,8 +84,44 @@
       height: 200px;
     }
 
-    /* ice coffe */
-    &-circle-ice-coffe::before {
+    /* ice coffee */
+    &-circle-ice-coffee::before {
+      /* image */
+      content: '';
+      display: block;
+      position: relative;
+      top: -100px;
+
+      border-radius: 150px;
+      background-image: url('./../images/product_ice-coffee.jpg'),
+        url('./../images/product_ice-coffee@2x.jpg'), url('./../images/product_ice-coffee@3x.jpg');
+      width: 200px; //d302px
+      height: 200px; //d302px
+      background-size: 200px 200px;
+
+      margin: auto;
+    }
+
+    &-circle-ice-coffee::after {
+      /* shadow */
+      content: '';
+      display: block;
+      position: relative;
+      top: -289px;
+
+      margin: auto;
+      border-radius: 150px;
+
+      background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+        #d9d9d9;
+      box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+      width: 200px;
+      height: 200px;
+    }
+
+    /* milkshakes */
+    &-circle-milkshakes::before {
       /* image */
       content: '';
       display: block;
@@ -96,8 +130,8 @@
       top: -100px;
 
       border-radius: 150px;
-      background-image: url('./../images/product_ice-cream.png'),
-        url('./../images/product_ice-cream@2x.png'), url('./../images/product_ice-cream@3x.png');
+      background-image: url('./../images/product_milkshakes.jpg'),
+        url('./../images/product_milkshakes@2x.jpg'), url('./../images/product_milkshakes@3x.jpg');
       width: 200px; //d302px
       height: 200px; //d302px
       background-size: 200px 200px;
@@ -105,20 +139,19 @@
       margin: auto;
     }
 
-    &-circle-ice-cream::after {
+    &-circle-milkshakes::after {
       /* shadow */
       content: '';
       display: block;
       position: relative;
-
       top: -289px;
 
-      z-index: 2;
       margin: auto;
       border-radius: 150px;
-      background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+
+      background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
         #d9d9d9;
-      box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+      box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 
       width: 200px;
       height: 200px;
@@ -131,7 +164,7 @@
       border-radius: 24px;
     }
 
-    &-card-ice-coffe {
+    &-card-ice-coffee {
       background-color: getColor('iceBgYellow');
       width: 320px;
       height: 428px;
