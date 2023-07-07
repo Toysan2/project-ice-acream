@@ -363,18 +363,18 @@
 
     &-item {
       &-card-ice-cream {
-        width: 370px;
-        height: 536px;
+        width: 222px;
+        height: 428px;
       }
 
       &-card-ice-coffee {
-        width: 370px;
-        height: 536px;
+        width: 222px;
+        height: 428px;
       }
 
       &-card-milkshakes {
-        width: 370px;
-        height: 536px;
+        width: 222px;
+        height: 428px;
       }
       &-name {
         font-size: 22px;
@@ -412,7 +412,7 @@
 
   .products {
     background-image: url('./../images/desktop/Backgroud_desktop.jpg');
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 
     &__title {
