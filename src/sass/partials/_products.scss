@@ -246,28 +246,27 @@
       height: 200px;
     }
 
-    &-card-ice-cream {
-      background-color: getColor('iceBgGreen');
-      width: 320px;
-      height: 428px;
-      border-radius: 24px;
-    }
-
-    &-card-ice-coffee {
-      background-color: getColor('iceBgYellow');
-      width: 320px;
-      height: 428px;
-      border-radius: 24px;
-    }
-
-    &-card-milkshakes {
-      background-color: getColor('iceBgBrown');
-      width: 320px;
-      height: 428px;
-      border-radius: 24px;
-    }
-
     &-item {
+      &-card-ice-cream {
+        background-color: getColor('iceBgGreen');
+        width: 320px;
+        height: 428px;
+        border-radius: 24px;
+      }
+
+      &-card-ice-coffee {
+        background-color: getColor('iceBgYellow');
+        width: 320px;
+        height: 428px;
+        border-radius: 24px;
+      }
+
+      &-card-milkshakes {
+        background-color: getColor('iceBgBrown');
+        width: 320px;
+        height: 428px;
+        border-radius: 24px;
+      }
       &-name {
         margin-top: -273px;
         padding-bottom: 40px;
