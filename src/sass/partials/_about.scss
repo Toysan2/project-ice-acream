@@ -6,24 +6,48 @@
   text-align: center;
   width: 100%;
   width: auto;
-
+  @include tablet {
+    text-align: left;
+    padding-bottom: 83px;
+  }
+  @include desktop {
+    padding-bottom: 99px;
+  }
   &__eticet {
     color: getColor('light');
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 12px;
+    @include tablet {
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
   &__title {
     color: getColor('light');
     font-family: $fontFamilyTitles;
     font-weight: 400;
     font-size: 30px;
-    line-height: 37.71px;
+    line-height: 1.257;
     text-transform: uppercase;
     margin-bottom: 32px;
     margin-left: 135px;
     margin-right: 135px;
+    @include tablet {
+      font-size: 34px;
+      margin-bottom: 80px;
+      text-align: center;
+    }
+    @include desktop {
+      font-size: 36px;
+      margin-bottom: 82px;
+    }
   }
   &__wrapper {
     display: flex;
@@ -31,6 +55,19 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      column-gap: 38px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    @include desktop {
+      // justify-content: space-between;
+      column-gap: 109px;
+      justify-content: flex-start;
+    }
   }
   &__wrapper-img {
     background-color: color-mix(in srgb, #d9d9d9, 70% #f8d24e);
@@ -41,36 +78,92 @@
     margin-bottom: 40px;
     position: relative;
     margin-bottom: 60px;
+    @include tablet {
+      width: 100%;
+      padding: 0;
+      width: 330px;
+      height: 330px;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+      display: flex;
+      align-items: start;
+    }
   }
   &__wrapper-text {
     padding: 0 110px;
+    @include tablet {
+      padding: 0;
+      margin: 0;
+      max-width: 334px;
+    }
   }
   &__img {
     width: 279px;
     height: 278px;
     position: absolute;
     top: 22px;
+    @include tablet {
+      display: block;
+      width: 330px;
+      height: 330px;
+      // margin-bottom: 40px;
+      top: 26px;
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+      top: 39px;
+    }
   }
   &__text1 {
     font-weight: 400;
     font-size: 12px;
-    line-height: 21.12px;
+    line-height: 1.76;
     padding-bottom: 4px;
     min-width: 220px;
+    @include tablet {
+      padding-bottom: 8px;
+    }
+    @include desktop {
+      font-size: 16px;
+      min-width: 457px;
+    }
   }
   &__text2 {
     font-weight: 400;
     font-size: 12px;
-    line-height: 19.44px;
+    line-height: 1.62;
     padding-bottom: 4px;
     min-width: 220px;
+    @include tablet {
+      padding-bottom: 8px;
+      line-height: 1.76;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.94;
+      min-width: 457px;
+    }
   }
   &__text3 {
     font-weight: 400;
     font-size: 12px;
-    line-height: 19.44px;
+    line-height: 1.62;
     padding-bottom: 24px;
     min-width: 220px;
+    @include tablet {
+      line-height: 1.94;
+      padding-bottom: 32px;
+    }
+    @include desktop {
+      font-size: 14px;
+      min-width: 457px;
+      padding-bottom: 54px;
+    }
   }
   &__button {
     @include readMore;
@@ -85,66 +178,6 @@
     }
     &:disabled {
       background-color: getColor('btnDisabled');
-    }
-  }
-}
-@media #{$tablet} {
-  .about {
-    text-align: left;
-
-    &__eticet {
-      font-weight: 800;
-      font-size: 22px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-    &__title {
-      font-size: 34px;
-      margin-bottom: 80px;
-      text-align: center;
-    }
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-      column-gap: 38px;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-    &__wrapper-text {
-      padding: 0;
-      margin: 0;
-      max-width: 334px;
-    }
-    &__wrapper-img {
-      width: 100%;
-      padding: 0;
-      width: 330px;
-      height: 330px;
-      flex-shrink: 0;
-      margin-bottom: 0;
-    }
-    &__img {
-      display: block;
-      width: 330px;
-      height: 330px;
-      margin-bottom: 40px;
-      position: absolute;
-      top: 22px;
-    }
-    &__text1 {
-      padding-bottom: 8px;
-    }
-    &__text2 {
-      line-height: 21.12px;
-      padding-bottom: 8px;
-    }
-    &__text3 {
-      line-height: 23.28px;
-      padding-bottom: 32px;
-    }
-    &__button {
-      text-align: center;
     }
   }
 }
