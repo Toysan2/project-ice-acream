@@ -270,44 +270,44 @@
       justify-content: center;
     }
 
-    &__milk-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 18px;
+    &__arrow-button {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // width: 18px;
+      // height: 18px;
+      // border-radius: 50%;
+      // border-style: none;
+      // background-color: white;
+    }
+
+    &__arrow-button:hover,
+    &__arrow-button:focus {
+      // background-color: green;
+      cursor: pointer;
+    }
+
+    &__arrow-button:hover &__arrow-button-icon,
+    &__arrow-button:focus &__arrow-button-icon {
+      // fill: white;
+      cursor: pointer;
+    }
+
+    &__arrow-button-icon {
+      width: 40px;
       height: 18px;
-      border-radius: 50%;
-      border-style: none;
-      background-color: white;
-    }
-
-    &__milk-button:hover,
-    &__milk-button:focus {
-      background-color: green;
-      cursor: pointer;
-    }
-
-    &__milk-button:hover &__milk-button-icon,
-    &__milk-button:focus &__milk-button-icon {
+      // stroke-width: 0;
       fill: white;
-      cursor: pointer;
     }
 
-    &__milk-button-icon {
-      width: 9px;
-      height: 9px;
-      stroke-width: 0;
-      fill: green;
-    }
-
-    &__ellipse {
-      width: 324px;
-      height: 322px;
-      padding-top: 32px;
-      padding-left: 71px;
-      top: -18.5%;
-      right: 18.5%;
-    }
+    // &__ellipse {
+    //   width: 324px;
+    //   height: 322px;
+    //   padding-top: 32px;
+    //   padding-left: 71px;
+    //   top: -18.5%;
+    //   right: 18.5%;
+    // }
 
     &__ice-cream {
       width: 218px;
@@ -507,14 +507,15 @@
       max-width: 200px;
     }
 
-    &__milk-button {
-      width: 26px;
-      height: 26px;
+    &__arrow-button {
+      width: 0px;
+      height: 0px;
     }
 
-    &__milk-button-icon {
-      width: 9px;
-      height: 9px;
+    &__arrow-button-icon {
+      width: 40px;
+      height: 16px;
+      fill: white;
     }
 
     // &__ellipse {
