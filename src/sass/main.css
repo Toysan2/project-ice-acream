@@ -706,16 +706,19 @@ body {
   color: #131313;
 }
 .products__list {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin: auto;
-  text-align: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   /* ice cream */
   /* ice coffee */
   /* milkshakes */
+}
+.products__list .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 160px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 .products__list-circle-ice-cream::before {
   /* image */
@@ -812,6 +815,7 @@ body {
   width: 320px;
   height: 428px;
   border-radius: 24px;
+  margin-bottom: 60px;
 }
 .products__list-item-name {
   margin-top: -273px;
@@ -841,6 +845,9 @@ body {
   margin-left: 60px;
 }
 .products__list-item-arrow-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 106px;
   cursor: pointer;
 }
