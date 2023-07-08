@@ -1,0 +1,107 @@
+.customer-review {
+  background-color: #84a178;
+  background-image: url('../images/mobil/Backgroud_mobile.png');
+  background-repeat: repeat;
+  padding-bottom: 409px;
+
+  @media #{$tablet} {
+    background-image: url('../images/tablet/Background_tablet.png');
+    padding-bottom: 319px;
+    background-repeat: repeat;
+  }
+
+  @media #{$desktop} {
+    background-image: url('../images/desktop/Backgroud_desktop.png');
+    background-repeat: repeat;
+    padding-bottom: 230px;
+  }
+}
+
+.head-photo {
+  border-radius: 24px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 20px);
+  position: relative;
+  z-index: 3;
+}
+
+.review {
+  &__photo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__photo {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-top: 140px;
+    margin-bottom: 32px;
+    width: 85px;
+  }
+
+  &__text {
+    background-color: getColor('bgGreen');
+    border: 1px solid getColor('bgGreen');
+    border-radius: 10px;
+    text-align: center;
+    color: getColor('light');
+    padding: 35px 39px;
+    font-size: $fontSizeSmaller;
+    font-weight: 400;
+    letter-spacing: 0.64;
+    font-family: $fontFamilyMain;
+    line-height: 255%;
+    width: 280px;
+    height: 256px;
+    display: flex;
+    margin: auto;
+    cursor: grab;
+
+    @media #{$tablet} {
+      width: 705px;
+      height: 138px;
+      letter-spacing: 0.56px;
+      line-height: 186%;
+      font-weight: 500;
+      font-size: $fontSizeSmall;
+    }
+
+    @media #{$desktop} {
+      width: 968px;
+      height: 138px;
+      padding: 43px 109px;
+      font-size: $fontSizeBig;
+      font-weight: 500;
+      line-height: 186%;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    color: getColor('dark');
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 230px;
+
+    @media #{$tablet} {
+      font-size: $fontSizeBig;
+    }
+
+    @media #{$desktop} {
+      font-size: $fontSizeBig;
+    }
+  }
+}
+
+.container .swiper-pagination-bullet {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+
+.container .swiper-pagination-bullet-active {
+  background-color: #84a178;
+}
