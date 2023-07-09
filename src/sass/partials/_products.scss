@@ -121,6 +121,8 @@
         color: getColor('dark');
         padding-bottom: 50px;
         margin: auto;
+
+        margin-bottom: 104px;
       }
 
       &-arrow-icon {
@@ -133,7 +135,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        margin-bottom: 67px;
+        
       }
     }
 
@@ -396,10 +398,10 @@
           width: 172px;
           height: 144px;
           font-size: 14px;
+
+          margin-bottom: 60px;
         }
-        &-btn{
-          margin-bottom: 20px;
-        }
+      
       }
     }
   }
@@ -482,10 +484,10 @@
           width: 242px;
           height: 142px;
           font-size: 16px;
+          
+          margin-bottom: 113px;
         }
-        &-btn{
-          margin-bottom: 24px;
-        }
+        
       }
     }
   }

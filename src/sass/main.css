@@ -812,12 +812,16 @@ body {
   color: #131313;
   padding-bottom: 50px;
   margin: auto;
+  margin-bottom: 104px;
 }
 .products__list-item-arrow-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 106px;
+}
+.products__list-item-btn {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 .products__list-circle-ice-cream::before {
@@ -992,9 +996,7 @@ body {
     width: 172px;
     height: 144px;
     font-size: 14px;
-  }
-  .products__list-item-arrow-icon {
-    margin-top: 62px;
+    margin-bottom: 60px;
   }
 }
 /* DESKTOP */
@@ -1055,9 +1057,7 @@ body {
     width: 242px;
     height: 142px;
     font-size: 16px;
-  }
-  .products__list-item-arrow-icon {
-    margin-top: 113px;
+    margin-bottom: 113px;
   }
 }
 .about {
