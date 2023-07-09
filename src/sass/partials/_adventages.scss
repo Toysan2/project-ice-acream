@@ -6,13 +6,16 @@
     flex-direction: column;
     padding-bottom: 69px;
     align-items: center;
-    @media #{$tablet} {
+    @include tablet {
         flex-direction: row;
         gap: 80px;
         flex-wrap: nowrap;
         justify-content: center;
         padding-bottom: 204px;
   }
+  @include desktop {
+    justify-content: space-evenly;
+}
   }
   &__item {
     max-width: 230px;
@@ -22,10 +25,13 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 28px;
-    @media #{$tablet} {
+    @include tablet {
        max-width: 152px;
        padding-bottom: 0px;
   }
+  @include desktop {
+    max-width: 368px;
+}
   }
 
   &__cow::before {
@@ -69,11 +75,14 @@
     font-size: 36px;
     color: getColor('light');
     padding-bottom: 16px;
-    @media #{$tablet} {
+    @include tablet {
         font-size: 48px;
         padding-top: 32px;
         padding-bottom: 12px;
    }
+   @include desktop {
+    font-size: 58px;
+}
   }
   &__text {
     font-weight: 400;
@@ -81,9 +90,12 @@
     line-height: 1.7;
     color: getColor('light');
     text-align: center;
-    @media #{$tablet} {
+    @include tablet {
         font-size: 14px;
         line-height: 1.74;
   }
+  @include desktop {
+    font-size: 16px;
+}
 }
 }
