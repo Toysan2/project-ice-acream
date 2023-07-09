@@ -4,12 +4,18 @@
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: contain;
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 65px;
   position: relative;
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media (max-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 12px;
     background-image: url(../images/tablet/dots_tablet.png);
   }
@@ -19,6 +25,11 @@
     background-image: url(../images/mobil/dots_mobil.png);
     background-size: 330px;
     background-position: 100% 100%;
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
