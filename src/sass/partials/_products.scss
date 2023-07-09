@@ -127,9 +127,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
 
-        margin-top: 106px;
+      &-btn{
+        background-color: transparent;
+        border: none;
         cursor: pointer;
+        margin-bottom: 67px;
       }
     }
 
@@ -393,8 +397,8 @@
           height: 144px;
           font-size: 14px;
         }
-        &-arrow-icon {
-          margin-top: 62px;
+        &-btn{
+          margin-bottom: 20px;
         }
       }
     }
@@ -479,8 +483,8 @@
           height: 142px;
           font-size: 16px;
         }
-        &-arrow-icon {
-          margin-top: 113px;
+        &-btn{
+          margin-bottom: 24px;
         }
       }
     }
