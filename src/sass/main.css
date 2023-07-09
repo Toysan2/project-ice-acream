@@ -1906,6 +1906,11 @@ video {
   display: flex;
   flex-direction: column;
 }
+.order__btn-container {
+  width: 121px;
+  height: 42px;
+  border-radius: 10px;
+}
 .order__btn {
   width: 164px;
   height: 42px;
