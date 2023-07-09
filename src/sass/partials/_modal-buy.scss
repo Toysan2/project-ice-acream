@@ -13,12 +13,7 @@
   transform: scale(1);
   transition: $transVisibility, $transOpacity, $transTransform;
 }
-.is-hidden-buy {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0);
-}
+
 .order {
   overflow: auto;
   position: relative;
@@ -219,6 +214,12 @@
       color: getColor('dark');
     }
   }
+}
+.is-hidden-buy {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
 }
 
 @media #{$tablet} {

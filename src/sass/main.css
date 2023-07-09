@@ -1859,13 +1859,6 @@ video {
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden-buy {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0);
-}
-
 .order {
   overflow: auto;
   position: relative;
@@ -2077,6 +2070,13 @@ video {
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
+}
+
+.is-hidden-buy {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
