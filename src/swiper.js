@@ -1,26 +1,25 @@
+// Slider z automatyczną zmianą zdjęć
+var photoSlider = new Swiper('.photo-slider .swiper-container', {
+  effect: 'fade',
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 3000, // Czas wyświetlania jednego slajdu w milisekundach
+  },
+  speed: 2000,
+});
+
+// Slider z opiniami
 const swiper = new Swiper('.opinion-slider', {
-  // Optional parameters
+  slidesPerView: 1,
   direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-pagination',
-    prevEl: '.swiper-pagination',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  //scrollbar: {
-  // el: '.swiper-scrollbar',
-  //},
-
-  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 });

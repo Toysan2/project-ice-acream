@@ -84,7 +84,7 @@
     font-size: 20px;
     font-weight: 500;
     padding-top: 32px;
-    padding-bottom: 230px;
+    padding-bottom: 60px;
 
     @media #{$tablet} {
       font-size: $fontSizeBig;
@@ -92,6 +92,7 @@
 
     @media #{$desktop} {
       font-size: $fontSizeBig;
+      margin-bottom: 0px;
     }
   }
 }

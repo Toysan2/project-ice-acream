@@ -127,7 +127,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   padding-top: 32px;
-  padding-bottom: 230px;
+  padding-bottom: 60px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .review__name {
@@ -137,6 +137,7 @@ body {
 @media (min-width: 1200px) {
   .review__name {
     font-size: 16px;
+    margin-bottom: 0px;
   }
 }
 
