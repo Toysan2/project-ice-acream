@@ -169,7 +169,8 @@
   }
 
   &__text-slogan {
-    font-family: 'DM Sans'; // font do zaimportowania - dodany tymczasowo na górze pliku
+    // font-family: 'DM Sans'; // font do zaimportowania - dodany tymczasowo na górze pliku
+    font-family: $fontFamilyDescription;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
