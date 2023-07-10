@@ -12,6 +12,20 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    &__icons {
+        width: 40px;
+        height: 37px;
+        
+        @include tablet {
+                width: 48px;
+                height: 44px;
+            }
+        @include desktop {
+            width: 60px;
+            height: 65px;
+        }
+    }
 }
 
 .page-nav {
