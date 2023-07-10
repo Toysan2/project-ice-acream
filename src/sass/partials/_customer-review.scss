@@ -13,6 +13,8 @@
     background-image: url('../images/desktop/Backgroud_desktop.png');
     background-repeat: repeat;
     background-position: -100px 128px;
+    padding-bottom: 250px;
+    margin-bottom: -127px;
   }
 }
 
@@ -96,12 +98,12 @@
   }
 }
 
-.container .swiper-pagination-bullet {
+.customer-review .swiper-pagination-bullet {
   cursor: pointer;
   width: 12px;
   height: 12px;
 }
 
-.container .swiper-pagination-bullet-active {
+.customer-review .swiper-pagination-bullet-active {
   background-color: #84a178;
 }
