@@ -35,21 +35,23 @@
     </svg>
   </button>
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <button
-      type="button"
-      class="menu-toggle menu-toggle--close js-close-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      data-menu-button
-    >
-      <svg width="32" height="32" aria-label="menu-switcher">
-        <use class="menu-button__cross" href="./images/icons.svg#icon-menu_close"></use>
+    <div class="mobile-header">
+      <svg class="mobile-header__icons" width="60" height="65">
+        <use href="./images/icons.svg#icon-logo"></use>
       </svg>
-    </button>
+      <button
+        type="button"
+        class="menu-toggle menu-toggle--close js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button
+      >
+        <svg width="32" height="32" aria-label="menu-switcher">
+          <use class="menu-tongle__cross" href="./images/icons.svg#icon-menu_close"></use>
+        </svg>
+      </button>
+    </div>
     <!--Nawigacja Menu telefon-->
-    <svg class="mobile-icons" width="60" height="65">
-      <use href="./images/icons.svg#icon-logo"></use>
-    </svg>
     <ul class="mobile-list">
       <li class="mobile-list__pagename">
         <a class="mobile-list__item" href="./index.html">Home</a>
