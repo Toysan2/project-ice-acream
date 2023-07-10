@@ -1,19 +1,18 @@
 .customer-review {
-  background-color: #84a178;
   background-image: url('../images/mobil/Backgroud_mobile.png');
   background-repeat: repeat;
-  padding-bottom: 409px;
+  background-position: -288px 349px;
 
   @media #{$tablet} {
     background-image: url('../images/tablet/Background_tablet.png');
-    padding-bottom: 319px;
+    background-position: -30px 299px;
     background-repeat: repeat;
   }
 
   @media #{$desktop} {
     background-image: url('../images/desktop/Backgroud_desktop.png');
     background-repeat: repeat;
-    padding-bottom: 230px;
+    background-position: -100px 128px;
   }
 }
 
@@ -84,7 +83,7 @@
     font-size: 20px;
     font-weight: 500;
     padding-top: 32px;
-    padding-bottom: 230px;
+    padding-bottom: 60px;
 
     @media #{$tablet} {
       font-size: $fontSizeBig;
@@ -92,6 +91,7 @@
 
     @media #{$desktop} {
       font-size: $fontSizeBig;
+      margin-bottom: 0px;
     }
   }
 }
