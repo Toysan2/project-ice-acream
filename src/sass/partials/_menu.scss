@@ -2,14 +2,15 @@
 
 .menu-toggle {
     display: flex;
+    justify-content: space-between;
     border: none;
     background: none;
     fill: #FFFFFF;
     cursor: pointer;
-    margin-right: 20px;
+    text-align: right;
 
     @include tablet {
-        padding-left: 180px;
+        margin-left: 360px;
     }
 
     @include desktop {
@@ -24,23 +25,20 @@
     }
 
     &--close {
-        margin-top: 20px;
         margin-left: auto;
     }
 }
 
-.mobile-icons {
-    margin-top: -30px;
-
-    @media #{$tablet} {
-        margin-top: -150px;
-    }
+.mobile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .menu-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     overflow: auto;
     inset: 0;
     position: fixed;
@@ -60,10 +58,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: 37px;
 
-    @media #{$tablet} {
-        margin-top: 73px;
+    &__pagename {
+        margin-top: 32px;
     }
 }
 
@@ -74,7 +72,6 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     justify-content: center;
-    gap: 32px;
 
     @media #{$tablet} {
         font-size: 48px;
