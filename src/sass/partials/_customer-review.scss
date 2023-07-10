@@ -1,19 +1,18 @@
-.customer-review {
-  background-color: #84a178;
+.container {
   background-image: url('../images/mobil/Backgroud_mobile.png');
-  background-repeat: repeat;
-  padding-bottom: 409px;
+  background-repeat: no-repeat;
+  background-position: -288px 349px;
 
   @media #{$tablet} {
     background-image: url('../images/tablet/Background_tablet.png');
-    padding-bottom: 319px;
-    background-repeat: repeat;
+    background-position: -30px 299px;
+    background-repeat: no-repeat;
   }
 
   @media #{$desktop} {
     background-image: url('../images/desktop/Backgroud_desktop.png');
-    background-repeat: repeat;
-    padding-bottom: 230px;
+    background-repeat: no-repeat;
+    background-position: -100px 128px;
   }
 }
 
