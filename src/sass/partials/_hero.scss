@@ -92,22 +92,24 @@
   }
 
   &__btn--products {
-    width: 134px;
-    height: 42px;
-    cursor: pointer;
-    color: getColor('dark');
-    font-family: $fontFamilyMain;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 2px solid getColor('btnDefault');
+    // width: 134px;
+    // height: 42px;
+    // cursor: pointer;
+    // color: getColor('dark');
+    // font-family: $fontFamilyMain;
+    // font-size: 14px;
+    // font-weight: 600;
+    // background-color: transparent;
+    // border-radius: 10px;
+    // border: 2px solid getColor('btnDefault');
+    @include productsDesktop();
 
     @media (max-width: 768px) {
-      width: 108px;
-      height: 38px;
-      color: getColor('black');
-      font-size: 12px;
+      // width: 108px;
+      // height: 38px;
+      // color: getColor('black');
+      // font-size: 12px;
+      @include productsMobTab();
     }
   }
 
@@ -267,6 +269,7 @@
   line-height: normal;
   letter-spacing: 1.84px;
   text-transform: uppercase;
+  margin-bottom: 4px;
   @media (max-width: 768px) {
     font-size: 28px;
     letter-spacing: 1.12px;
