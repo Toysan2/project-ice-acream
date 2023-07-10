@@ -121,15 +121,21 @@
         color: getColor('dark');
         padding-bottom: 50px;
         margin: auto;
+
+        margin-bottom: 104px;
       }
 
       &-arrow-icon {
         display: flex;
         justify-content: center;
         align-items: center;
+      }
 
-        margin-top: 106px;
+      &-btn{
+        background-color: transparent;
+        border: none;
         cursor: pointer;
+        
       }
     }
 
@@ -392,10 +398,10 @@
           width: 172px;
           height: 144px;
           font-size: 14px;
+
+          margin-bottom: 60px;
         }
-        &-arrow-icon {
-          margin-top: 62px;
-        }
+      
       }
     }
   }
@@ -478,10 +484,10 @@
           width: 242px;
           height: 142px;
           font-size: 16px;
+          
+          margin-bottom: 113px;
         }
-        &-arrow-icon {
-          margin-top: 113px;
-        }
+        
       }
     }
   }

@@ -18,6 +18,7 @@ $colors: (
 }
 $fontFamilyMain: 'Montserrat', sans-serif;
 $fontFamilyTitles: 'Seymour One', sans-serif;
+$fontFamilyDescription: 'DM Sans', sans-serif;
 $fontSizeBigger: 18px;
 $fontSizeBig: 16px;
 $fontSizeSmall: 14px;
@@ -96,13 +97,13 @@ $desktop: '(min-width: 1200px)';
 // mixins for tablet and desktop
 
 @mixin tablet {
-	@media screen and (min-width: 768px) {
-		@content;
-	}
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-	@media screen and (min-width: 1200px) {
-		@content;
-	}
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }
