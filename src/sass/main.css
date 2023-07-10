@@ -2165,20 +2165,20 @@ video {
 }
 .customer-review {
   background-image: url("../images/mobil/Backgroud_mobile.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: -288px 349px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .customer-review {
     background-image: url("../images/tablet/Background_tablet.png");
     background-position: -30px 299px;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
   }
 }
 @media (min-width: 1200px) {
   .customer-review {
     background-image: url("../images/desktop/Backgroud_desktop.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: -100px 128px;
   }
 }
