@@ -1,17 +1,50 @@
 <section class="customer-review">
   <div class="container">
     
-    <picture>
-      <source
-        srcset="./images/slide1@2x.jpg"
-        media="(min-width: 768px) and (max-width: 1199px)"
-        ,
-        srcset="./images/slide1@3x.jpg"
-        media="(min-width: 1200px)"
-      />
+      
+          <div class="photo-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+              <picture>
+                <source
+              srcset="./images/slide1@2x.jpg"
+              media="(min-width: 768px) and (max-width: 1199px)"/>
+              
+              <source srcset="./images/slide1@3x.jpg" media="(min-width: 1200px)"/>
 
-      <img class="head-photo" src="./images/slide1.jpg" alt="ice-cream" />
+            <img class="head-photo" src="./images/slide1.jpg" alt="ice-cream" />
+            </picture>
+              </div>
+              <div class="swiper-slide">
+              <picture>
+            <source
+              srcset="./images/slide2@2x.jpg"
+              media="(min-width: 768px) and (max-width: 1199px)"/>
+              
+              <source srcset="./images/slide2@3x.jpg" media="(min-width: 1200px)"/>
+              <img class="head-photo" src="./images/slide2.jpg" alt="ice-cream" />
+              
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+            <source
+              srcset="./images/slide3@2x.jpg"
+              media="(min-width: 768px) and (max-width: 1199px)"/>
+              
+              <source srcset="./images/slide3@3x.jpg" media="(min-width: 1200px)"/>
+
+            <img class="head-photo" src="./images/slide3.jpg" alt="ice-cream" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+
     
+
 
     <div class="swiper opinion-slider">
       <div class="swiper-wrapper">
@@ -73,7 +106,9 @@
           <p class="review__name">Diana, Chicago</p>
         </div>
       </div>
+      <div class="pagination-container">
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 </section>
