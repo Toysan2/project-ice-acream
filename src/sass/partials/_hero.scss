@@ -80,6 +80,7 @@
     margin-bottom: 42px;
     display: inline-flex;
     gap: 34px;
+    align-items: center;
 
     @media (max-width: 768px) {
       margin-bottom: 12px;
@@ -112,19 +113,23 @@
       @include productsMobTab();
     }
   }
+  // &__btn{
 
+  // }
   &__btn--how-it-is-made {
-    cursor: pointer;
-    color: getColor('btnDefault');
-    font-family: $fontFamilyMain;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
-    text-decoration-line: underline;
+    // cursor: pointer;
+    // color: getColor('btnDefault');
+    // font-family: $fontFamilyMain;
+    // font-size: 14px;
+    // font-weight: 600;
+    // background-color: transparent;
+    // border: none;
+    // text-decoration-line: underline;
+    @include howItsMadeDesktop();
 
     @media (max-width: 768px) {
-      font-size: 12px;
+      // font-size: 12px;
+      @include howItsMadeMobTab();
     }
   }
 
