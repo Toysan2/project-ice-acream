@@ -101,26 +101,25 @@
       max-width: 334px;
     }
   }
-  &__imgbackground{
+  &__imgbackground {
     position: absolute;
     width: 279px;
     height: 278px;
-      border-radius: 50%;
-      top: 22px;
-      overflow: hidden;
-      @include tablet {
-        display: block;
-        width: 330px;
-        height: 330px;
-        top: 26px;
-  
+    border-radius: 50%;
+    top: 22px;
+    overflow: hidden;
+    @include tablet {
+      display: block;
+      width: 330px;
+      height: 330px;
+      top: 26px;
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+      top: 39px;
+    }
   }
-  @include desktop {
-    width: 490px;
-    height: 490px;
-    top: 39px;
-  }
-}
   &__img {
     width: 279px;
     height: 278px;
@@ -197,6 +196,4 @@
       background-color: getColor('btnDisabled');
     }
   }
-
 }
-
