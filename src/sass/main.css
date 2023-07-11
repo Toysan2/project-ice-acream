@@ -819,7 +819,7 @@ body {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products {
     background-image: url("./../images/mobil/Backgroud_mobile@2x.jpg");
-    background-size: cover;
+    background-repeat: repeat-x;
   }
 }
 @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
@@ -830,7 +830,7 @@ body {
 }
 .products {
   background-image: url("./../images/mobil/Backgroud_mobile.jpg");
-  background-size: cover;
+  background-repeat: repeat-x;
   margin: auto;
   padding-bottom: 60px;
 }
@@ -941,7 +941,7 @@ body {
   position: relative;
   top: -100px;
   border-radius: 150px;
-  background-image: url("./../images/product_ice-cream.png");
+  background-image: url("./../images/product_ice-cream.jpg");
   width: 200px;
   height: 200px;
   background-size: 200px 200px;
@@ -950,13 +950,13 @@ body {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__list-circle-ice-cream::before {
     margin: auto;
-    background-image: url("./../images/product_ice-cream@2x.png");
+    background-image: url("./../images/product_ice-cream@2x.jpg");
   }
 }
 @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .products__list-circle-ice-cream::before {
     margin: auto;
-    background-image: url("./../images/product_ice-cream@3x.png");
+    background-image: url("./../images/product_ice-cream@3x.jpg");
   }
 }
 .products__list-circle-ice-cream::after {
@@ -1053,20 +1053,19 @@ body {
 @media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .products {
     background-image: url("./../images/tablet/Background_tablet@2x.jpg");
-    background-size: cover;
+    background-repeat: repeat-x;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
   .products {
     background-image: url("./../images/tablet/Background_tablet@3x.jpg");
-    background-size: cover;
+    background-repeat: repeat-x;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .products {
     background-image: url("./../images/tablet/Background_tablet.jpg");
-    background-size: cover;
-    margin: auto;
+    background-repeat: repeat-x;
   }
   .products__title {
     /* 100% natural */
@@ -1114,20 +1113,19 @@ body {
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .products {
     background-image: url("./../images/desktop/Backgroud_desktop@2x.jpg");
-    background-size: cover;
+    background-repeat: repeat-x;
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 3), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 288dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
   .products {
     background-image: url("./../images/desktop/Backgroud_desktop@3x.jpg");
-    background-size: cover;
+    background-repeat: repeat-x;
   }
 }
 @media (min-width: 1200px) {
   .products {
     background-image: url("./../images/desktop/Backgroud_desktop.jpg");
-    max-width: 1200px;
-    background-size: cover;
+    background-repeat: repeat-x;
   }
   .products__title {
     /* 100% natural */
