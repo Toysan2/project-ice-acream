@@ -2659,11 +2659,14 @@ video {
     font-size: 12px;
   }
 }
+.header-section {
+  background-color: #84a178;
+}
+
 .page-header {
   display: flex;
   padding-top: 8px;
   justify-content: space-between;
-  background-color: #84a178;
   align-items: center;
   padding-bottom: 14px;
 }
@@ -2774,6 +2777,7 @@ video {
 @media screen and (min-width: 768px) {
   .menu-toggle {
     margin-left: auto;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
