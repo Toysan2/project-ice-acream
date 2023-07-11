@@ -19,13 +19,22 @@
 }
 
 .head-photo {
-  border-radius: 24px;
+  border-radius: 28px;
   margin: auto;
   display: flex;
   justify-content: center;
   width: calc(100% - 20px);
   position: relative;
   z-index: 3;
+  margin-top: -55px;
+
+  @media #{$tablet} {
+    margin-top: -75px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -95px;
+  }
 }
 
 .review {

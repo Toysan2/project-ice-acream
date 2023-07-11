@@ -2258,13 +2258,24 @@ video {
 }
 
 .head-photo {
-  border-radius: 24px;
+  border-radius: 28px;
   margin: auto;
   display: flex;
   justify-content: center;
   width: calc(100% - 20px);
   position: relative;
   z-index: 3;
+  margin-top: -55px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .head-photo {
+    margin-top: -75px;
+  }
+}
+@media (min-width: 1200px) {
+  .head-photo {
+    margin-top: -95px;
+  }
 }
 
 .review__photo-container {
@@ -2659,11 +2670,14 @@ video {
     font-size: 12px;
   }
 }
+.header-section {
+  background-color: #84a178;
+}
+
 .page-header {
   display: flex;
   padding-top: 8px;
   justify-content: space-between;
-  background-color: #84a178;
   align-items: center;
   padding-bottom: 14px;
 }
@@ -2774,6 +2788,7 @@ video {
 @media screen and (min-width: 768px) {
   .menu-toggle {
     margin-left: auto;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
