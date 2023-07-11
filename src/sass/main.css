@@ -86,12 +86,14 @@ body {
     width: 24px;
   }
 }
-.contacts {
+.contacts-section {
   background-color: #84a178;
   background-image: url("../images/mobil/Backgroud_mobile.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -1105px;
+  background-repeat: repeat-x;
+  background-position: center -885px;
+}
+
+.contacts {
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -162,16 +164,6 @@ body {
   border-color: #ababab;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url("../images/mobil/Backgroud_mobile@2x.jpg");
-  }
-}
-@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-  .contacts {
-    background-image: url("../images/mobil/Backgroud_mobile@3x.jpg");
-  }
-}
 .contact {
   display: flex;
   flex-direction: column;
@@ -241,9 +233,11 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .contacts {
+  .contacts-section {
     background-image: url("../images/tablet/Background_tablet.jpg");
-    background-position: 0 -505px;
+    background-position: center -710px;
+  }
+  .contacts {
     padding-bottom: 40px;
   }
   .contacts__buttons {
@@ -255,18 +249,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-}
-@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url("../images/tablet/Background_tablet@2x.jpg");
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
-  .contacts {
-    background-image: url("../images/tablet/Background_tablet@3x.jpg");
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
   .contact {
     flex-direction: row;
   }
@@ -314,9 +296,11 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .contacts {
+  .contacts-section {
     background-image: url("../images/desktop/Backgroud_desktop.jpg");
-    background-position: 0 -1115px;
+    background-position: center -1220px;
+  }
+  .contacts {
     padding-bottom: 120px;
   }
   .contacts__buttons {
@@ -328,18 +312,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-}
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url("../images/desktop/Backgroud_desktop@2x.jpg");
-  }
-}
-@media (min-width: 1200px) and (min-device-pixel-ratio: 3), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 288dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
-  .contacts {
-    background-image: url("../images/desktop/Backgroud_desktop@3x.jpg");
-  }
-}
-@media (min-width: 1200px) {
   .contact {
     flex-direction: row;
     gap: 32px;
@@ -1375,10 +1347,18 @@ body {
 .user-ingr__input:not(:-moz-placeholder-shown):invalid {
   border: 1px solid red;
 }
+.user-ingr__input:not(:-ms-input-placeholder):invalid {
+  border: 1px solid red;
+}
 .user-ingr__input:not(:placeholder-shown):invalid {
   border: 1px solid red;
 }
 .user-ingr__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.user-ingr__input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
@@ -1405,6 +1385,11 @@ body {
   outline: none;
 }
 .user-ingr__textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.user-ingr__textarea:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
@@ -1763,8 +1748,11 @@ body {
   background-color: #ababab;
 }
 
-.footer {
+.footer-section {
   background-color: #84a178;
+}
+
+.footer {
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
@@ -2220,6 +2208,10 @@ video {
   opacity: 1;
   font-size: 12px;
 }
+:-ms-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+}
 ::placeholder {
   opacity: 1;
   font-size: 12px;
@@ -2227,6 +2219,9 @@ video {
 
 @media (min-width: 768px) {
   ::-moz-placeholder {
+    font-size: 14px;
+  }
+  :-ms-input-placeholder {
     font-size: 14px;
   }
   ::placeholder {
@@ -2317,6 +2312,7 @@ video {
   height: 256px;
   display: flex;
   margin: auto;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2551,10 +2547,18 @@ video {
 .user__input:not(:-moz-placeholder-shown):invalid {
   border: 1px solid red;
 }
+.user__input:not(:-ms-input-placeholder):invalid {
+  border: 1px solid red;
+}
 .user__input:not(:placeholder-shown):invalid {
   border: 1px solid red;
 }
 .user__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.user__input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
@@ -2581,6 +2585,11 @@ video {
   outline: none;
 }
 .user__textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+}
+.user__textarea:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
@@ -2622,6 +2631,9 @@ video {
   .user__input::-moz-placeholder {
     font-size: 12px;
   }
+  .user__input:-ms-input-placeholder {
+    font-size: 12px;
+  }
   .user__input::placeholder {
     font-size: 12px;
   }
@@ -2634,6 +2646,9 @@ video {
     margin-bottom: 32px;
   }
   .user__textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .user__textarea:-ms-input-placeholder {
     font-size: 12px;
   }
   .user__textarea::placeholder {
@@ -2664,6 +2679,9 @@ video {
   .user__input::-moz-placeholder {
     font-size: 12px;
   }
+  .user__input:-ms-input-placeholder {
+    font-size: 12px;
+  }
   .user__input::placeholder {
     font-size: 12px;
   }
@@ -2678,6 +2696,9 @@ video {
   .user__textarea::-moz-placeholder {
     font-size: 12px;
   }
+  .user__textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
   .user__textarea::placeholder {
     font-size: 12px;
   }
@@ -2688,6 +2709,7 @@ video {
   justify-content: space-between;
   background-color: #84a178;
   align-items: center;
+  padding-bottom: 14px;
 }
 .page-header__wraper {
   display: flex;
@@ -2704,6 +2726,7 @@ video {
     gap: 46px;
     align-items: center;
     justify-content: space-between;
+    margin-left: 220px;
   }
 }
 .page-nav__item {
@@ -2769,15 +2792,16 @@ video {
 
 .menu-toggle {
   display: flex;
+  justify-content: space-between;
   border: none;
   background: none;
   fill: #FFFFFF;
   cursor: pointer;
-  margin-right: 20px;
+  text-align: right;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    padding-left: 180px;
+    margin-left: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2791,23 +2815,19 @@ video {
   transition-timing-function: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-toggle--close {
-  margin-top: 20px;
   margin-left: auto;
 }
 
-.mobile-icons {
-  margin-top: -30px;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .mobile-icons {
-    margin-top: -150px;
-  }
+.mobile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .menu-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: auto;
   inset: 0;
   position: fixed;
@@ -2827,12 +2847,10 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 37px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  .mobile-list {
-    margin-top: 73px;
-  }
+.mobile-list__pagename {
+  margin-top: 32px;
 }
 
 .mobile-list__item {
@@ -2842,7 +2860,6 @@ video {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   justify-content: center;
-  gap: 32px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .mobile-list__item {
