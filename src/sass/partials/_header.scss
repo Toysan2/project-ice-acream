@@ -1,8 +1,11 @@
+.header-section {
+        background-color: getColor('bgGreen');
+}
+
 .page-header {
     display: flex;
     padding-top: 8px;
     justify-content: space-between;
-    background-color: getColor('bgGreen');
     align-items: center;
     padding-bottom: 14px;
 
