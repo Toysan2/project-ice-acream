@@ -505,6 +505,11 @@ body {
   }
 }
 
+.bg {
+  background-color: #84a178;
+  width: 100%;
+}
+
 .hero__container {
   background-color: #84a178;
   background-image: url(../images/desktop/dots_desktop.png);
@@ -590,6 +595,11 @@ body {
     width: 247px;
   }
 }
+@media (max-width: 768px) {
+  .hero__title-Passion {
+    font-size: 34px;
+  }
+}
 .hero__box-links {
   margin-bottom: 42px;
   display: inline-flex;
@@ -669,10 +679,6 @@ body {
   }
   .hero__btn--products__btn--products:hover {
     border-color: #f8d24e;
-  }
-  .hero__btn--products__btn--products:focus {
-    border-color: #f8d24e;
-    color: #fcfcfc;
   }
 }
 .hero__btn--how-it-is-made {
@@ -757,6 +763,7 @@ body {
   z-index: 5;
   height: 560px;
   width: 456px;
+  border: 1px solid #84a178;
 }
 .hero__box-img-ice-cream__ice-cream {
   width: 100%;

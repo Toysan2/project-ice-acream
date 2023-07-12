@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@900&display=swap'); // do przeniesienia
 
+.bg {
+  background-color: getColor('bgGreen');
+  width: 100%;
+}
+
 .hero__container {
   background-color: getColor('bgGreen');
   background-image: url(../images/desktop/dots_desktop.png);
@@ -75,7 +80,11 @@
       width: 247px;
     }
   }
-
+  &__title-Passion {
+    @media (max-width: 768px) {
+      font-size: 34px;
+    }
+  }
   &__box-links {
     margin-bottom: 42px;
     display: inline-flex;
