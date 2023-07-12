@@ -4,7 +4,7 @@
   (min-resolution: 2dppx) {
   .products {
     background-image: url('./../images/mobil/Backgroud_mobile@2x.jpg');
-    background-size: cover;
+    background-repeat: repeat-x;
     //width: 100%; //480px;
   }
 }
@@ -21,7 +21,7 @@
 
 .products {
   background-image: url('./../images/mobil/Backgroud_mobile.jpg');
-  background-size: cover;
+  background-repeat: repeat-x;
   //width: 100%; //480px;
   margin: auto;
   padding-bottom: 60px;
@@ -131,11 +131,10 @@
         align-items: center;
       }
 
-      &-btn{
+      &-btn {
         background-color: transparent;
         border: none;
         cursor: pointer;
-        
       }
     }
 
@@ -150,7 +149,7 @@
       top: -100px;
 
       border-radius: 150px;
-      background-image: url('./../images/product_ice-cream.png');
+      background-image: url('./../images/product_ice-cream.jpg');
       width: 200px; //d302px
       height: 200px; //d302px
       background-size: 200px 200px;
@@ -166,7 +165,7 @@
       &-circle-ice-cream::before {
         margin: auto;
 
-        background-image: url('./../images/product_ice-cream@2x.png');
+        background-image: url('./../images/product_ice-cream@2x.jpg');
       }
     }
 
@@ -177,7 +176,7 @@
       (min-resolution: 3dppx) {
       &-circle-ice-cream::before {
         margin: auto;
-        background-image: url('./../images/product_ice-cream@3x.png');
+        background-image: url('./../images/product_ice-cream@3x.jpg');
       }
     }
 
@@ -330,7 +329,7 @@
     (min-resolution: 2dppx) {
     .products {
       background-image: url('./../images/tablet/Background_tablet@2x.jpg');
-      background-size: cover;
+      background-repeat: repeat-x;
       //width: 1200px;
     }
   }
@@ -341,16 +340,16 @@
     (min-resolution: 3dppx) {
     .products {
       background-image: url('./../images/tablet/Background_tablet@3x.jpg');
-      background-size: cover;
+      background-repeat: repeat-x;
       //width: 1200px;
     }
   }
 
   .products {
     background-image: url('./../images/tablet/Background_tablet.jpg');
-    background-size: cover;
+    background-repeat: repeat-x;
     //width: 1200px;
-    margin: auto;
+    //margin: auto;
 
     &__title {
       /* 100% natural */
@@ -401,7 +400,6 @@
 
           margin-bottom: 60px;
         }
-      
       }
     }
   }
@@ -416,7 +414,7 @@
     (min-resolution: 2dppx) {
     .products {
       background-image: url('./../images/desktop/Backgroud_desktop@2x.jpg');
-      background-size: cover;
+      background-repeat: repeat-x;
       //width: 1200px;
     }
   }
@@ -427,15 +425,15 @@
     (min-resolution: 3dppx) {
     .products {
       background-image: url('./../images/desktop/Backgroud_desktop@3x.jpg');
-      background-size: cover;
+      background-repeat: repeat-x;
       //width: 1200px;
     }
   }
 
   .products {
     background-image: url('./../images/desktop/Backgroud_desktop.jpg');
-    max-width: 1200px;
-    background-size: cover;
+    //background-repeat: repeat-x;
+    background-repeat: repeat-x;
     //margin: auto;
 
     &__title {
@@ -484,10 +482,9 @@
           width: 242px;
           height: 142px;
           font-size: 16px;
-          
+
           margin-bottom: 113px;
         }
-        
       }
     }
   }

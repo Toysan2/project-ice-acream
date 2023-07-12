@@ -1,8 +1,11 @@
+.header-section {
+        background-color: getColor('bgGreen');
+}
+
 .page-header {
     display: flex;
     padding-top: 8px;
     justify-content: space-between;
-    background-color: getColor('bgGreen');
     align-items: center;
     padding-bottom: 14px;
 
@@ -11,6 +14,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &__icons {
+        width: 40px;
+        height: 37px;
+        
+        @include tablet {
+                width: 48px;
+                height: 44px;
+            }
+        @include desktop {
+            width: 60px;
+            height: 65px;
+        }
     }
 }
 
