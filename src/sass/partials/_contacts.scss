@@ -1,9 +1,10 @@
-.contacts {
+.contacts-section {
   background-color: getColor('bgGreen');
   background-image: url('../images/mobil/Backgroud_mobile.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -1105px;
+  background-repeat: repeat-x;
+  background-position: center -885px;
+}
+.contacts {
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -46,16 +47,7 @@
     }
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url('../images/mobil/Backgroud_mobile@2x.jpg');
-  }
-}
-@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-  .contacts {
-    background-image: url('../images/mobil/Backgroud_mobile@3x.jpg');
-  }
-}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -129,9 +121,11 @@
 }
 
 @media #{$tablet} {
-  .contacts {
+  .contacts-section {
     background-image: url('../images/tablet/Background_tablet.jpg');
-    background-position: 0 -505px;
+    background-position: center -710px;
+  }
+  .contacts {
     padding-bottom: 40px;
     &__buttons {
       flex-direction: row;
@@ -143,16 +137,7 @@
       margin-bottom: 0;
     }
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .contacts {
-      background-image: url('../images/tablet/Background_tablet@2x.jpg');
-    }
-  }
-  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-    .contacts {
-      background-image: url('../images/tablet/Background_tablet@3x.jpg');
-    }
-  }
+
   .contact {
     flex-direction: row;
     &__item {
@@ -201,9 +186,11 @@
 }
 
 @media #{$desktop} {
-  .contacts {
+  .contacts-section {
     background-image: url('../images/desktop/Backgroud_desktop.jpg');
-    background-position: 0 -1115px;
+    background-position: center -1220px;
+  }
+  .contacts {
     padding-bottom: 120px;
     &__buttons {
       flex-direction: row;
@@ -215,16 +202,7 @@
       margin-bottom: 0;
     }
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .contacts {
-      background-image: url('../images/desktop/Backgroud_desktop@2x.jpg');
-    }
-  }
-  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-    .contacts {
-      background-image: url('../images/desktop/Backgroud_desktop@3x.jpg');
-    }
-  }
+
   .contact {
     flex-direction: row;
     gap: 32px;
