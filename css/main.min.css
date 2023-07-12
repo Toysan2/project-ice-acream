@@ -629,6 +629,15 @@ body {
   align-items: center;
   justify-content: center;
   width: 134px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__btn--products__btn--products:hover {
+  border-color: #f8d24e;
+}
+.hero__btn--products__btn--products:focus {
+  border-color: #f8d24e;
+  color: #fcfcfc;
 }
 @media (max-width: 768px) {
   .hero__btn--products {
@@ -655,6 +664,15 @@ body {
     width: 108px;
     height: 38px;
     font-size: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero__btn--products__btn--products:hover {
+    border-color: #f8d24e;
+  }
+  .hero__btn--products__btn--products:focus {
+    border-color: #f8d24e;
+    color: #fcfcfc;
   }
 }
 .hero__btn--how-it-is-made {
